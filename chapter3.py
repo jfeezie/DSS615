@@ -165,18 +165,119 @@
 #     honors = "."
 # print("You graduated" + honors)
 
-#Example 9
-num1 = input("Enter first number: ")
-num2 = input("Enter second number: ")
-if num1.isdigit() and num2.isdigit():
-    print("The sum is", str(eval(num1) + eval(num2)))
-elif not num1.isdigit():
-    if not num2.isdigit():
-        print("Neither entry was a proper number.")
-    else:
-        print("The first entry was not a proper number.")
-else:
-    print("The second entry was not a proper number.")
+# #Example 9
+# num1 = input("Enter first number: ")
+# num2 = input("Enter second number: ")
+# if num1.isdigit() and num2.isdigit():
+#     print("The sum is", str(eval(num1) + eval(num2)))
+# elif not num1.isdigit():
+#     if not num2.isdigit():
+#         print("Neither entry was a proper number.")
+#     else:
+#         print("The first entry was not a proper number.")
+# else:
+#     print("The second entry was not a proper number.")
+
+
+# #Section 3.3
+# #example 1
+# num = 1
+# while num <= 5:
+#     print(num)
+#     num +=1
+#
+
+# #Example 2
+# print("This program displays a famous movie quatation.")
+# responses = ('1','2','3')
+# response = '0'
+# while response not in responses:
+#     response = input("Enter 1, 2, or 3: ")
+#     if response == '1':
+#         print("Plastics.")
+#     elif response == '2':
+#         print("Rosebud.")
+#     elif response == '3':
+#         print("That's all folks.")
+
+# #Example 3
+# count = 0
+# total = 0
+# print("Enter -1 to terminate entering numbers.")
+# num = eval(input("Enter a nonnegative number: "))
+# min = num
+# max = num
+# while num != -1:
+#     count += 1
+#     total += num
+#     if num < min:
+#         min = num
+#     if num > max:
+#         max = num
+#     num = eval(input("Enter a nonnegative number: "))
+# if count > 0:
+#     print("Minimum: ", min)
+#     print("Maximum: ", max)
+#     print("Average: ", total / count)
+#     print("Numbers entered: ", count)
+#     print("Total entered: ", total)
+# else:
+#     print("No nonnegative numbers were entered")
+
+# #Exampe 4
+# list1 = []
+# print("Enter -1 to terminate entering numbers.")
+# num = eval(input("Enter a nonnegative number: "))
+# while num != -1:
+#     list1.append(num)
+#     num = eval(input("Enter a nonnegative number: "))
+# if len(list1) > 0:
+#     list1.sort()
+#     print("Minimuam: ", list1[0])
+#     print("Maximum: ", list1[-1])
+#     print("Average: ", sum(list1) / len(list1))
+#     print("Numbers entered: ", len(list1))
+#     print("Total entered: ", sum(list1))
+# else:
+#     print("No nonnegative numbers were entered.")
+
+#
+# #Eaxample 5
+# numberOfYears = 0
+# balance = eval(input("Enter initial deposit: "))
+# while balance < 1000000:
+#     balance += 0.04 * balance
+#     numberOfYears += 1
+# print("in", numberOfYears, "years you will have a million dollars.")
+
+# #Example 6
+# list1 =[]
+# print("Enter -1 to terminate entering numbers.")
+# while True:
+#     num = eval(input("Enter a nonnegative number: "))
+#     if num == -1:
+#         break
+#     list1.append(num)
+
+
+#Exampe 7
+list1 = ["one", 23, 17.5, "two", 33, 22.1, 242, "three"]
+i = 0
+foundFlag = False
+while i < len(list1):
+    x = list1[i]
+    i += 1
+    if not isinstance(x , int):
+        continue
+    if x % 11 == 0:
+        foundFlag = True
+        print(x, " is the first in that is divisable by 11.")
+        break
+if not foundFlag:
+    print("There is no int in the list that is divisable by 11.")
+
+
+
 
 
 

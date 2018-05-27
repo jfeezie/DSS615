@@ -258,53 +258,47 @@
 #     print("You graduated" + honors)
 
 
-print("43.")
-#Get taxable income
-#If income less then 20000 set tax rate to .2 * income
-#if greater then or equal to 20000 check to see if less then 50000 or greater the 50000
-#less then 5000 set rate to 400 + .25 * (income - 25000)
-#greater then set to 1150 + .35 * (income - 50000)
-#Print outcome
-taxableIncome = eval(input("Enter your taxable income: "))
-if taxableIncome < 20000:
-    taxAmount = .2 * taxableIncome
-else:
-    if taxableIncome < 50000:
-        taxAmount = 400 + .25 * (taxableIncome - 25000)
-    else:
-        taxAmount = 1150 + .35 * (taxableIncome - 50000)
-print("Your tax is ${0:,.2f}".format(taxAmount))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# print("43.")
+# #Get taxable income
+# #If income less then 20000 set tax rate to .2 * income
+# #if greater then or equal to 20000 check to see if less then 50000 or greater the 50000
+# #less then 5000 set rate to 400 + .25 * (income - 25000)
+# #greater then set to 1150 + .35 * (income - 50000)
+# #Print outcome
+# taxableIncome = eval(input("Enter your taxable income: "))
+# if taxableIncome < 20000:
+#     taxAmount = .2 * taxableIncome
+# else:
+#     if taxableIncome < 50000:
+#         taxAmount = 400 + .25 * (taxableIncome - 25000)
+#     else:
+#         taxAmount = 1150 + .35 * (taxableIncome - 50000)
+# print("Your tax is ${0:,.2f}".format(taxAmount))
+# print()
 
 
 #pp 111-117 Exercises 1-31 odd
+print("pp 111-117 Exercises 1-31 odd")
+print("1. 24")
+print("3. 10")
+print("5. ", end ="")
+list1 = [2, 4, 6, 8]
+total = 0
+while list1:
+    total += list1[0]
+    list1 = list1[1:]
+print(total)
+print("7.")
+print("a")
+print("b")
+print("c")
+print("d")
+print("9. It is an infinite loop")
+print("11. i would need to be -1 or remove the -1 from the while statement.")
+
+
+
+
 
 #pp 127-136 Exercises 1-83 odd
 
